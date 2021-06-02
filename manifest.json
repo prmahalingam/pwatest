@@ -8,7 +8,7 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "/pwatest",
+  "start_url": "/pwatest/",
   "background_color": "#3367D6",
   "display": "standalone",
   "scope": "/pwatest/",
