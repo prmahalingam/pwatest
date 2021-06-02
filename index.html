@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PWA Test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1'/>
+    <meta name="description" content="lets test it!">
+    <link rel="canonical" href="https://kosamari.github.io/translucent" />
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Copse);
+
+    *{
+      background-color: #F5F4F0;
+      font-family: Copse, Rockwell, Georgia, serif;
+    }
+
+    #input {
+      width: 0px;
+      height: 0px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    #input + label {
+      width:99%;
+      min-width: 250px;
+      font-size: 1em;
+      padding:5px;
+      color: #f3f3f3;
+      background-color: #777;
+      display: inline-block;
+      box-shadow: 1px 1px #555;
+      text-align: center;
+    }
+    #input:focus + label,
+    #input + label:hover {
+      background-color: #999;
+    }
+    #input:focus + label {
+      outline: 1px dotted #000;
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    #drop-target{
+      margin-top: 5px;
+      width: 100%;
+      min-width: 250px;
+      height: 50px;
+      border: dashed 2px gray;
+      line-height: 50px;
+      text-align: center;
+      color: #777;
+    }
+    #drop-target.drop {
+      border: solid 2px gray;
+    }
+    #message {
+      margin: 10px 0px;
+    }
+    button {
+      font-size: 1em;
+      padding:6px;
+      color: white;
+      background-color: #55ACEE;
+      box-shadow: 1px 1px #555;
+      border: none;
+      margin: 5px 0px;
+      width:100%;
+    }
+    button:hover {
+      background-color: #66BDEE;
+    }
+    #container {
+      max-width:500px;
+      min-width: 250px;
+      margin-left: auto;
+      margin-right:auto;
+    }
+    a{
+      text-decoration: none;
+      color: #00144B;
+    }
+
+    </style>
+</head>
+<body>
+  <div id="container">
+    Hello World
+  </div>
+  <script >
+  if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('/translucent/sw.js', {scope: '/translucent/'})
+  }
+  </script>
+
+</body>
+</html>
