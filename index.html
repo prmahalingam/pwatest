@@ -6,6 +6,10 @@
     <meta name="description" content="lets test it!">
     <link rel="canonical" href="https://prmahalingam.github.io/pwatest" />
     <link rel="manifest" href="https://prmahalingam.github.io/pwatest/manifest.json">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <style>
     @import url(https://fonts.googleapis.com/css?family=Copse);
 
@@ -68,12 +72,33 @@
     </style>
 </head>
 <body>
-    <script>
-        alert("Hello");
-    </script>
   <div id="container">
-    Hello World. How are you
+    <div class="row">
+      <div class="col-md-12" style="margin:0;">
+    Hello World. How are you? Feel free to fork the code and edit it!
   </div>
+  </div>
+  </div>
+  <div class="container">
+    <center><h1>FDP Certificate</h1></center>
+  <script>
+    function onSubmit() {
+    }
+  </script>
+<form method="POST" action="" role="form" class="needs-validation" novalidate>
+<div class="row">
+  <div class="form-group col-md-12">
+    <label for="phonenum">Phone number</label>
+    <input type="number" class="form-control" id="phonenum" name="phonenum" placeholder="919999999999" required>
+    <div class="invalid-feedback">
+        Format not correct!
+    </div>
+  </div>
+</div>
+<div class="form-group col-md-12">
+  <center><button type="submit" class="btn btn-success btn-send" value="Submit">Start WhatsApp</button></center>
+</div>
+</form>
   <script >
   if (navigator.serviceWorker) {
     navigator.serviceWorker.register('/pwatest/sw.js', {scope: '/pwatest/'})
