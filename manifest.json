@@ -1,7 +1,7 @@
 {
   "short_name": "TestApp",
   "name": "Hi This is a test!",
-  "version": "2",
+  "version": "4",
   "icons": [
     {
       "src": "phone.png",
