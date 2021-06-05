@@ -89,30 +89,30 @@
   <div id="container">
     <div class="row">
       <div class="col-md-12" style="margin:0;">
-    Hello World. How are you? Feel free to fork the code and edit it! Dont hesitate... Thats what GitHub is for!
+   
   </div>
   </div>
   </div>
   <div class="container">
-    <center><h1>Just some title we made up :-)</h1></center>
+    <center><h1>WhatsApp Launcher</h1></center>
   <script>
-    function onSubmit() {
+    function loadWA() {
+        var phnum=document.getElementById('phonenum').value;
+        var url="https://wa.me/"+phnum;
+        window.location=url;
     }
   </script>
-<form method="POST" action="" role="form" class="needs-validation" novalidate>
 <div class="row">
-  <div class="form-group col-md-12">
-    <label for="phonenum">Just a label</label>
-    <input type="number" class="form-control" id="phonenum" name="phonenum" placeholder="0123456789" required>
+    <label for="phonenum">Phone Number</label>
+    <input type="number" class="form-control" id="phonenum" name="phonenum" placeholder="919999999999" required>
     <div class="invalid-feedback">
         Format not correct!
     </div>
   </div>
 </div>
 <div class="form-group col-md-12">
-  <center><button type="submit" class="btn btn-success btn-send" value="Submit">This is a button!</button></center>
+  <center><button class="btn btn-success" value="Click" onclick="loadWA()">Launch on WhatsApp</button></center>
 </div>
-</form>
   <script >
   if (navigator.serviceWorker) {
     navigator.serviceWorker.register('/pwatest/service-worker.js', {scope: '/pwatest/'})
