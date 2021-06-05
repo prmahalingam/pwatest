@@ -103,7 +103,6 @@
   </script>
 <form method="POST" action="" role="form" class="needs-validation" novalidate>
 <div class="row">
-  <div class="form-group col-md-12">
     <label for="phonenum">Phone Number</label>
     <input type="number" class="form-control" id="phonenum" name="phonenum" placeholder="919999999999" required>
     <div class="invalid-feedback">
@@ -112,9 +111,8 @@
   </div>
 </div>
 <div class="form-group col-md-12">
-  <center><button type="submit" class="btn btn-success btn-send" value="Submit">Launch on WhatsApp</button></center>
+  <center><button class="btn btn-success btn-send" value="Click" onclick="onSubmit()">Launch on WhatsApp</button></center>
 </div>
-</form>
   <script >
   if (navigator.serviceWorker) {
     navigator.serviceWorker.register('/pwatest/service-worker.js', {scope: '/pwatest/'})
