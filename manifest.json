@@ -9,7 +9,7 @@
     }
   ],
   "start_url": "/pwatest/",
-  "background_color": "#3367D6",
+  "background_color": "#FFFFFF",
   "display": "standalone",
   "scope": "/pwatest/",
   "theme_color": "#FFFFFF"
